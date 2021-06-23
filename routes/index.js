@@ -85,13 +85,50 @@ router.get('/solutions', forwardAuthenticated, (req, res) => res.render('solutio
 
 
 // Dashboard
+
 router.get('/home', ensureAuthenticated, (req, res) =>
   res.render('dashboard', {
     user: req.user
   })
 );
+
 router.get('/profile', ensureAuthenticated, (req, res) =>
   res.render('profile', {
+    user: req.user
+  })
+);
+router.get('/buy-crypto', ensureAuthenticated, (req, res) =>
+  res.render('buy', {
+    user: req.user
+  })
+);
+router.get('/sell-crypto', ensureAuthenticated, (req, res) =>
+  res.render('sell', {
+    user: req.user
+  })
+);
+router.get('/request', ensureAuthenticated, (req, res) =>
+  res.render('request', {
+    user: req.user
+  })
+);
+router.get('/send', ensureAuthenticated, (req, res) =>
+  res.render('send', {
+    user: req.user
+  })
+);
+router.get('/earn-margin', ensureAuthenticated, (req, res) =>
+  res.render('margin', {
+    user: req.user
+  })
+);
+router.get('/earn-nfts', ensureAuthenticated, (req, res) =>
+  res.render('enfts', {
+    user: req.user
+  })
+);
+router.get('/swap', ensureAuthenticated, (req, res) =>
+  res.render('swap', {
     user: req.user
   })
 );

@@ -217,38 +217,38 @@
                                 </li>
                                 <li class="app-sidebar__heading">Transact</li>
                                 <li  >
-                                    <a href="/invest">
+                                    <a href="/buy-crypto">
                                         <i class="metismenu-icon pe-7s-credit"></i>
                                         Buy Crypto
                                     </a>
                                 </li>
                                 <li  >
-                                    <a href="/return-on-investments">
+                                    <a href="/request">
                                         <i class="metismenu-icon pe-7s-download"></i>
                                         Request 
                                     </a>
                                 </li>
                                 <li  >
-                                    <a href="/invest">
+                                    <a href="/send">
                                         <i class="metismenu-icon pe-7s-paper-plane"></i>
                                         Send 
                                     </a>
                                 </li>
                                 <li  >
-                                    <a href="/return-on-investments">
+                                    <a href="/sell-crypto">
                                         <i class="metismenu-icon pe-7s-cart"></i>
                                         Sell Crypto
                                     </a>
                                 </li>
                                 <li class="app-sidebar__heading">Trade</li>
                                 <li>
-                                    <a href="/profile">
+                                    <a href="/swap">
                                         <i class="metismenu-icon pe-7s-shuffle"></i>
                                         Swap
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/profile">
+                                    <a href="/margin">
                                         <i class="metismenu-icon pe-7s-display1"></i>
                                         Margin
                                     </a>
@@ -257,13 +257,13 @@
                                 
                                 <li class="app-sidebar__heading">EARN</li>
                                 <li>
-                                    <a href="/withdrawal">
+                                    <a href="/earn-stake">
                                         <i class="metismenu-icon pe-7s-note">
                                         </i>Stake
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/withdrawal">
+                                    <a href="/earn-nfts">
                                         <i class="metismenu-icon pe-7s-photo">
                                         </i>NFTs
                                     </a>
@@ -288,23 +288,36 @@
                                         <i class="pe-7s-car icon-gradient bg-mean-fruit">
                                         </i>
                                     </div>
-                                    <div>Portfolio Dashboard
+                                    <div>
                                         <div class="page-title-subheading"> 
-                                            General overview of earnings, transaction and profits. 
+                                            Equty Value(BTC)
                                         </div>
+                                         0.3863 ~ $ 51.25
                                     </div>
                                 </div>
-                                <!-- <div class="page-title-actions">
-                                    <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
+                                <div class="page-title-actions">
+                                    <!-- <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
                                         <i class="fa fa-star"></i>
-                                    </button>
+                                    </button> -->
                                     <div class="d-inline-block dropdown">
-                                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
+                                        <a class="btn-shadow dropdown-toggle btn btn-info text-white">
                                             <span class="btn-icon-wrapper pr-2 opacity-7">
-                                                <i class="fa fa-business-time fa-w-20"></i>
+                                                <i class="fa fa-download fa-w-20"></i>
                                             </span>
-                                            Buttons
-                                        </button>
+                                            Request
+                                        </a>
+                                        <a class="btn-shadow dropdown-toggle btn btn-info text-white pb-2">
+                                            <span class="btn-icon-wrapper pr-3 opacity-7">
+                                                <i class="fa fa-paper-plane fa-w-20"></i>
+                                            </span>
+                                            Send 
+                                        </a><br>
+                                        <a class="btn-shadow dropdown-toggle btn btn-info text-white mt-2">
+                                            <span class="btn-icon-wrapper pr-2 opacity-7">
+                                                <i class="fa fa-shopping-cart fa-w-20"></i>
+                                            </span>
+                                            Buy Crypto
+                                        </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
                                             <ul class="nav flex-column">
                                                 <li class="nav-item">
@@ -344,16 +357,21 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>  -->  </div> 
+                                </div>   </div> 
                         </div>            <div class="row">
                             <div class="col-md-6 col-xl-4">
                                 <div class="card mb-3 widget-content bg-white">
-                                    <div class="widget-content-wrapper text-dark">
+                                    <div class=" ml-auto mx-auto">
+                                        <img class="mx-auto d-inline-block rounded-circle" height="38" width="38" src="https://assets.trustwalletapp.com/blockchains/bitcoin/info/logo.png" alt="BTC">
+                                    </div>
+                                    
+                                    <div class="widget-content-wrapper text-dark ">
                                         <div class="widget-content-left">
-                                            <div class="widget-heading">Total Deposit</div>
+                                            <div class="widget-numbers">Total Deposit</div>
                                             <div class="widget-subheading">Available equity  </div>
                                         </div>
                                         <div class="widget-content-right">
+                                            <div class="widget-numbers text-dark"><span>$ <%= " " + user.availbalance %> </span></div>
                                             <div class="widget-numbers text-dark"><span>$ <%= " " + user.availbalance %> </span></div>
                                         </div>
                                     </div>
