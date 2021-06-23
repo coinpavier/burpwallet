@@ -85,7 +85,7 @@ router.get('/solutions', forwardAuthenticated, (req, res) => res.render('solutio
 
 
 // Dashboard
-router.get('/dashboard', ensureAuthenticated, (req, res) =>
+router.get('/home', ensureAuthenticated, (req, res) =>
   res.render('dashboard', {
     user: req.user
   })
